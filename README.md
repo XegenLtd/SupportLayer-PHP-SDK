@@ -21,7 +21,7 @@ composer require supportlayer/php-sdk
 ```php
 use SupportLayer\SupportLayerClient;
 
-$client = new SupportLayerClient('https://yourapp.supportlayer.app', 'sl_live_YOUR_API_KEY');
+$client = new SupportLayerClient('https://www.supportlayer.app', 'sl_live_YOUR_API_KEY');
 
 // List open tickets
 $response = $client->tickets->list(['status' => 'open']);
@@ -36,13 +36,13 @@ foreach ($response['data'] as $ticket) {
 All requests require an API key. Generate one from the **API keys** page in your SupportLayer admin panel. Pass it as the second argument when creating the client:
 
 ```php
-$client = new SupportLayerClient('https://yourapp.supportlayer.app', 'sl_live_...');
+$client = new SupportLayerClient('https://www.supportlayer.app', 'sl_live_...');
 ```
 
 You can optionally set a custom timeout (in seconds) as the third argument:
 
 ```php
-$client = new SupportLayerClient('https://yourapp.supportlayer.app', 'sl_live_...', 60);
+$client = new SupportLayerClient('https://www.supportlayer.app', 'sl_live_...', 60);
 ```
 
 ## Usage
